@@ -34,6 +34,8 @@ namespace FootStance.Data
 
         public DbSet<MusicReview> MusicReviews { get; set; }
 
+        public DbSet<GameReview> GameReviews { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder

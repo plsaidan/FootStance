@@ -103,6 +103,21 @@ namespace FootStance.WebMVC.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteMusicStance(int id)
+        {
+            var service = CreateMusicReviewService();
+
+            service.DeleteMusicReview(id);
+
+            TempData["SaveResult"] = "Your Stance has been successfully deleted";
+
+            return RedirectToAction("Index");
+              
+        }
+
         private MusicReviewService CreateMusicReviewService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

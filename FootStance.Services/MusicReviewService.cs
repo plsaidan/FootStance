@@ -103,5 +103,19 @@ namespace FootStance.Services
 
             }
         }
+        public bool DeleteMusicReview(int musicReviewId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .MusicReviews
+                        .Single(e => e.MusicReviewId == musicReviewId && e.OwnerId == _userId);
+
+                ctx.MusicReviews.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

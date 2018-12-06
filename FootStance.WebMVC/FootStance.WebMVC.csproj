@@ -197,11 +197,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MusicReviewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -231,7 +231,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -265,6 +267,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\MusicReview\Index.cshtml" />
+    <Content Include="Views\MusicReview\Create.cshtml" />
+    <Content Include="Views\MusicReview\Details.cshtml" />
+    <Content Include="Views\MusicReview\Edit.cshtml" />
+    <Content Include="Views\MusicReview\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -281,6 +288,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FootStance.Data\FootStance.Data.csproj">
+      <Project>{580ce76b-1755-46f4-b30f-77dc3f699b00}</Project>
+      <Name>FootStance.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FootStance.Models\FootStance.Models.csproj">
+      <Project>{30bea19a-0c5b-451f-88cc-bdb3d3bd34c7}</Project>
+      <Name>FootStance.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FootStance.Services\FootStance.Services.csproj">
+      <Project>{83f6e30d-052c-4eea-bc0b-32f55ab3a227}</Project>
+      <Name>FootStance.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

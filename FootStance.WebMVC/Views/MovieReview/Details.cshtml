@@ -1,0 +1,74 @@
+﻿@model FootStance.Models.MovieReviewDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MovieReviewDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieReviewId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieReviewId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieReleaseYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieReleaseYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Director)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Director)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieGenre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieGenre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieStance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieStance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieRating)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MovieReviewId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

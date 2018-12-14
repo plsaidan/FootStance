@@ -58,6 +58,10 @@
     <Compile Include="GameReviewDetail.cs" />
     <Compile Include="GameReviewEdit.cs" />
     <Compile Include="GameReviewListItem.cs" />
+    <Compile Include="MovieReviewCreate.cs" />
+    <Compile Include="MovieReviewDetail.cs" />
+    <Compile Include="MovieReviewEdit.cs" />
+    <Compile Include="MovieReviewListItem.cs" />
     <Compile Include="MusicReviewCreate.cs" />
     <Compile Include="MusicReviewDetail.cs" />
     <Compile Include="MusicReviewEdit.cs" />

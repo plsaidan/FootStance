@@ -64,7 +64,16 @@
     <Compile Include="Migrations\201812061713186_newdb.Designer.cs">
       <DependentUpon>201812061713186_newdb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812062133236_MovieDB.cs" />
+    <Compile Include="Migrations\201812062133236_MovieDB.Designer.cs">
+      <DependentUpon>201812062133236_MovieDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812100031480_soup.cs" />
+    <Compile Include="Migrations\201812100031480_soup.Designer.cs">
+      <DependentUpon>201812100031480_soup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MovieReview.cs" />
     <Compile Include="MusicReview.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +87,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812061713186_newdb.resx">
       <DependentUpon>201812061713186_newdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812062133236_MovieDB.resx">
+      <DependentUpon>201812062133236_MovieDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812100031480_soup.resx">
+      <DependentUpon>201812100031480_soup.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

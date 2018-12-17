@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 id="table-head">Movie Stances</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -61,8 +61,8 @@
             @Html.DisplayFor(modelItem => item.MovieRating)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.MovieReviewId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.MovieReviewId }) |
+            @Html.ActionLink("Edit", "Edit", new { id = item.MovieReviewId }) 
+            @Html.ActionLink("Details", "Details", new { id = item.MovieReviewId }) 
             @Html.ActionLink("Delete", "Delete", new { id = item.MovieReviewId })
         </td>
     </tr>

@@ -53,10 +53,10 @@ namespace FootStance.WebMVC.Controllers
             return View(model);
         }
 
-        public ActionResult Edit(int musicReviewId)
+        public ActionResult Edit(int id)
         {
             var service = CreateMusicReviewService();
-            var detail = service.GetMusicReviewById(musicReviewId);
+            var detail = service.GetMusicReviewById(id);
             var model =
                 new MusicReviewEdit
                 {

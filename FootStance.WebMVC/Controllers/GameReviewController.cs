@@ -123,5 +123,6 @@ namespace FootStance.WebMVC.Controllers
             var service = new GameReviewService(userId);
             return service;
         }
+
     }
 }

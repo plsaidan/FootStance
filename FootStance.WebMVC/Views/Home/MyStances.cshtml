@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "MyStances";
+}
+
+<div id="musicHead" class="col-md-4">
+    <h2 class="text-center"><u>Music Stances</u></h2>
+</div>
+<div id="gameHead" class="col-md-4">
+    <h2 class="text-center"><u>Video Game Stances</u></h2>
+</div>
+<div id="movieHead" class="col-md-4">
+    <h2 class="text-center"><u>Movie Stances</u></h2>
+</div>
+<div id="goToTables" class="row-two">
+    <div class="col-md-4">
+
+        <p>@Html.ActionLink("New Music Stance", "Index", "MusicReview", null, new { @class = "createMusicStance" })</p>
+    </div>
+    <div class="col-md-4">
+
+        <p>@Html.ActionLink("New Game Stance", "Index", "GameReview", null, new { @class = "createGameStance" })</p>
+    </div>
+    <div class="col-md-4">
+
+        <p>@Html.ActionLink("New Movie Stance", "Index", "MovieReview", null, new { @class = "createMovieStance" })</p>
+    </div>
+</div>

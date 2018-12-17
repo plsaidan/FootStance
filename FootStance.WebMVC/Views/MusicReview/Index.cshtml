@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 id="table-head">Music Stances</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -21,9 +21,6 @@
 }
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.MusicReviewId)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.Artist)
         </th>
@@ -48,9 +45,6 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.MusicReviewId)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Artist)
         </td>
         <td>
@@ -69,8 +63,8 @@
             @Html.DisplayFor(modelItem => item.MusicRating)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MusicReviewId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MusicReviewId }) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.MusicReviewId }) 
+            @Html.ActionLink("Details", "Details", new { id=item.MusicReviewId }) 
             @Html.ActionLink("Delete", "Delete", new { id=item.MusicReviewId })
         </td>
     </tr>

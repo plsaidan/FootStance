@@ -72,6 +72,18 @@
     <Compile Include="Migrations\201812100031480_soup.Designer.cs">
       <DependentUpon>201812100031480_soup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812170530487_discrptive-comment.cs" />
+    <Compile Include="Migrations\201812170530487_discrptive-comment.Designer.cs">
+      <DependentUpon>201812170530487_discrptive-comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812170634507_DisplayNames.cs" />
+    <Compile Include="Migrations\201812170634507_DisplayNames.Designer.cs">
+      <DependentUpon>201812170634507_DisplayNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812170640165_moreDisplayNames.cs" />
+    <Compile Include="Migrations\201812170640165_moreDisplayNames.Designer.cs">
+      <DependentUpon>201812170640165_moreDisplayNames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MovieReview.cs" />
     <Compile Include="MusicReview.cs" />
@@ -93,6 +105,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812100031480_soup.resx">
       <DependentUpon>201812100031480_soup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812170530487_discrptive-comment.resx">
+      <DependentUpon>201812170530487_discrptive-comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812170634507_DisplayNames.resx">
+      <DependentUpon>201812170634507_DisplayNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812170640165_moreDisplayNames.resx">
+      <DependentUpon>201812170640165_moreDisplayNames.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,24 +1,201 @@
 ﻿html body {
-    background-color: #cccccc;
+    background-color: #293542;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
 .navbar {
-    background: #2F8267;
+    background: #34597F;
 }
 
+
+.navbar-brand img{
+    width: 165%;
+    height: 165%;
+}
 .navbar-brand{
-    color: #cccccc;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding-top: 20px;
+    font-size: 145%;
+    letter-spacing: 1px;
+    color: #C0C0C0;
 }
 
-#navbarOp{
-    color:#cccccc; 
+.navbar-brand:hover{
+    color: #2F8267;
+    background: transparent;
 }
 
-#musicIcon {
-    background-image: url(https://drive.google.com/file/d/1t9u_iHOTDrBYE4D5YIcujzHy5Vc9HXsW/view?usp=sharing);
+
+#navbarOp {
+    padding-top: 5px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 125%;
+    letter-spacing: 1px;
 }
+
+#navbarOp a{
+    color: #C0C0C0;
+}
+
+#navbarOp li a:hover{
+    color: #2F8267;
+    background-color: transparent;
+}
+
+#loginBtn li a {
+    padding-top: 19px;
+    color: #C0C0C0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 125%;
+    letter-spacing: 1px;
+}
+
+#loginBtn li a:hover{
+    color: #2F8267;
+    background-color: transparent;
+}
+
+
+
+.jumbotron {
+    padding-right: 0;
+    width: -100vw;
+    background-color: #334356;
+    box-shadow: inherit;
+}
+
+
+.jumbotron img {
+    width: 15%;
+    height: 15%;
+ 
+}
+
+.jumbotron h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 6vw;
+    z-index: 10;
+    letter-spacing: 8px;
+    color: #C0C0C0;
+    padding-right: 46%;
+    
+}
+
+.jumbotron p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #C0C0C0;
+    font-size: 21px;
+    padding-left: 35%;
+
+}
+.row p {
+    padding-left: 16%;
+}
+
+.createMusicStance {
+    background: url(../assets/headphones.png), no-repeat;
+    background-size: contain;
+    display: block;
+    width: 300px;
+    height: 300px;
+    text-indent: -9999px;
+}
+
+.createGameStance {
+    background: url(../assets/joystick.png), no-repeat;
+    background-size: contain;
+    display: block;
+    width: 300px;
+    height: 300px;
+    text-indent: -9999px;
+}
+
+.createMovieStance {
+    background: url(../assets/video-camera.png), no-repeat;
+    background-size: contain;
+    display: block;
+    width: 300px;
+    height: 300px;
+    text-indent: -9999px;
+}
+
+#copyInfo {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 125%;
+    color: #C0C0C0;
+}
+
+.row-two {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: #C0C0C0;
+    padding-top: 8%;
+    padding-left: 8%;
+
+}
+#musicHead h2 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 300%;
+    color: #C0C0C0;
+    letter-spacing: 2px;
+    padding-left: 18%;
+}
+
+#gameHead h2 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 300%;
+    color: #C0C0C0;
+    letter-spacing: 2px;
+}
+
+#movieHead h2 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 300%;
+    color: #C0C0C0;
+    letter-spacing: 2px;
+    padding-right: 25%;
+}
+
+#stanceLayout{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #C0C0C0;
+    font-size: 22px;
+}
+
+#stanceLayout h2{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 165%;
+}
+
+#table-head {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: #C0C0C0;
+    font-size: 275%;
+}
+
+.table {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #C0C0C0;
+    font-size: 18px;
+}
+
+.table th{
+    font-family: 'Alegreya Sans SC', sans-serif;   
+    color: #C0C0C0;
+    font-size: 20px;
+}
+
+.btn {
+    color: #2F8267;
+    border-color: #2F8267;
+    background-color: transparent;
+}
+    .btn:hover {
+        color: #293542;
+        border-color: #2F8267;
+        background-color: #2F8267;
+    }
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {

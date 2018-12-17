@@ -26,5 +26,12 @@ namespace FootStance.WebMVC.Controllers
 
             return View();
         }
+
+        public ActionResult MyStances()
+        {
+            ViewBag.Message = "Your Stances.";
+
+            return View();
+        }
     }
 }

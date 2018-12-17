@@ -14,18 +14,23 @@ namespace FootStance.Models
         public string Artist { get; set; }
 
         [Required]
+        [Display(Name ="Title")]
         public string MusicTitle { get; set; }
 
         [Required]
+        [Display(Name ="Release Type")]
         public ReleaseType ReleaseType { get; set; }
 
         [Required]
+        [Display(Name = "Genre")]
         public MusicGenreType MusicGenreType { get; set; }
 
         [Required]
+        [Display(Name = "Stance")]
         public string MusicStance { get; set; }
 
         [Required]
+        [Display(Name = "Rating")]
         [Range(1,10, ErrorMessage ="Please enter a number between 1 and 10")]
         public int MusicRating { get; set; }
 
